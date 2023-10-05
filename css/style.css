@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.hader{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(2, 2, 2, 0.5);
+    position: fixed;
+    z-index: 30;
+}
+.imghader{
+    width: 150px;
+    height: 60px;
+    border-radius: 60px;
+    margin-left: 100px;
+}
+.list{
+   list-style: none;
+   float: right;
+   margin-right: 150px;
+}
+.list li{
+    float: left;
+   display: inline-block;
+   margin-right: 25px;
+   line-height: 60px;
+}
+
+.list a{
+    text-decoration: none;
+    color: rgb(124, 75, 18);
+    font-size: 20px;
+}
+.out{
+    font-size: 35px;
+    position: absolute;
+}
+
+/* ////////////////////////////////////////////////////////// اول سكشن */
+.parn{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/ddd.jpg);
+    position: relative;
+    color: aliceblue;
+}
+.ovrlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+}
+.lk{
+    width: 50%;
+    
+    text-align: center;
+    font-size:18px;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% ,-50%  );
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.lk h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.lk p{
+    letter-spacing: 1.5px;
+    color: rgb(144, 146, 148);
+    text-align: center;
+    font-size: 20;
+}
+.btn{
+    width: 150px;
+    height: 55px;
+    text-transform: capitalize;
+    border: 0;
+    font-size:20px ;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.put1{
+    background-color: rgb(30, 30, 243);
+    color:aliceblue
+}
+.btn:hover{
+    opacity: 0.7;
+}
+/* ///////////////////////////////////////////////////////تاني سيكشن */
+.heder-web{
+    height: 30vh;
+    text-align: center;
+
+}
+.heder-web h2{
+    font-size: 50px;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 13vh;
+}
+.heder-web h2 p{
+    width: 100px;
+    height: 6px;
+    background-color: rgb(160, 134, 233);
+    margin: auto;
+}
+.contaner-web{
+    width: 90%;
+    height: 50vh;
+    
+    margin: auto;
+}
+.darnt-web{
+    overflow: auto;
+   
+}
+.div123web{
+    width: 30%;
+    height: 50%;
+    float: left;
+    text-align: center;
+    border: 1px solid rgb(131, 133, 133);
+    /* background-color: black; */
+    position: relative;
+}
+.yui{
+    margin: 0 5%;
+}
+
+.div123web i{
+    color: rgb(133, 133, 243);
+    padding: 6% 0 0 0 ;
+    
+}
+.div123web h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 2% 0;
+    
+}
+.div123web:hover h2{
+    color: aqua;
+}
+.infowed{
+    position: absolute;
+    z-index: 2;
+}
+.div123web p{
+    font-size: 21px;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    padding: 0 5%;
+    color: rgb(160, 147, 147);
+    line-height: 35px;
+  
+}
+.div123web a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 0px;
+   
+}
+.div123web::after{
+    position: absolute;
+    content: " ";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(3, 3, 3,0.5);
+    transition: 0.5s;
+}
+.div123web:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3,0.8);
+    
+}
+/* /////////////////////////////////////////////////////.works */
+.section-works{
+    width: 100%;
+    height: 140vh;
+    background-color: rgb(218, 242, 250);
+}
+.hederworks{
+    text-align:center ;
+}
+.hederworks h2 {
+    text-transform: capitalize;
+    padding-top: 100px;
+    
+    font-size: 44px;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+}
+.hederworks p {
+    height: 5px;
+    width: 100px;
+    margin: auto;
+    background-color: rgb(182, 130, 230);
+    margin-bottom: 75;
+}
+.parantworks{
+
+}
+.contenrworkd{
+    overflow: auto;
+    width: 90%;
+    
+    margin: auto;
+    padding: 20px;
+}
+.parantworks123{
+    float: left;
+    width: 30%;
+    height: 30%;
+    position: relative;
+}  
+.mnb{   
+    margin: 0 5%;
+}
+.parantworks123 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.ovrlaworks{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(10, 10, 10,0.4);
+    text-align: center;
+    position: relative;
+    visibility: hidden;
+    transition: 2s;
+}
+.ifoworks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% ,-50%  );
+
+}
+.ifoworks p {
+    color: rgb(182, 121, 238);
+    font-size: 23px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.ifoworks h2 {
+    color: aliceblue;
+    font-size: 28px;
+    word-spacing: 3px;
+}
+.ifoworks i {
+   font-size: 20px;
+   
+    /* background-color: rgb(175, 121, 224); */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(76, 35, 114);
+}
+.ifoworks a {
+    display: inline-block;
+    background-color: rgb(165, 112, 214);
+}
+.parantworks123:hover .ovrlaworks{
+    visibility: visible;
+    background-color: rgba(10, 10, 10,0.7);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.sectionweoffer{
+    width: 100%;
+    height: 75vh;
+    
+}
+.hedarweoffer{
+   
+    font-size: 30;
+    height: 30%;
+    position: relative;
+}
+.mnlmn p {
+    width: 70px;
+    height: 5px;
+    background-color: rgb(135, 135, 219);
+    margin: auto;
+}
+.mnlmn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%  , -50%);
+}
+.contrweoffer{
+    width: 80%;
+    
+    margin: auto;
+    height: 70%;
+}
+.parentweoffer{
+    overflow: auto;
+    position: relative;
+    margin: auto;
+    
+}
+.a123weoffer{
+    width: 30%;
+    height: 40%;
+    float: left;
+    border: 1px solid rgb(182, 173, 170);
+    
+    overflow: auto;
+    padding: 2% 0;
+    position: relative;
+}
+.opi{
+    margin: 0 5%;
+}
+.lklo{
+    margin-top: 5;
+}
+.spanwithiconweoffer{
+    float: left;
+}
+
+.spanwithiconweoffer span {
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1.1px;
+}
+.spanwithiconweoffer p{
+    margin-top: 20px;
+    font-size: 18;
+    word-spacing: 1.3px;
+    color: rgb(136, 133, 135);
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.a123weoffer i{
+    display: block;
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    width: 15%;
+    color: #4a6ee4;
+    position: absolute;
+}
+.a123weoffer div{
+    position: absolute;
+    left: 85px;
+}
+.a123weoffer::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,0.5);
+   
+    transition: 0.5s;
+}
+.a123weoffer:hover::before{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10,0.7);
+    position: absolute;
+    z-index: -1;
+}
+.a123weoffer:hover div span{
+    color: aliceblue;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.sectionwyus{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(240, 248, 248);
+}
+.cntrwhyus{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.infowhyus{
+    width: 50%;
+    float: left;
+    
+}
+
+.infowhyus h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+    word-spacing: 2px;
+    line-height: 60px;
+    padding-top: 150px;
+    margin: auto;
+
+}
+.infowhyus p{
+    width: 85px;
+    height: 4px;
+    background-color: rgb(129, 129, 247);
+    margin-top: 10px;
+}
+.infowhyus span{
+    font-size: 19px;
+    word-spacing: 2px;
+    color: rgb(156, 153, 153);
+}
+.h2andpwhyus{
+    margin-bottom: 60px;
+}
+.infowhyus ul li{
+    font-size: 25;
+    color: rgb(156, 153, 153);
+    line-height: 50px;
+}
+.infowhyus ul li i{
+    font-size: 30px;
+    color: rgb(146, 146, 233);
+   
+}
+.imgwhyus{
+    width: 50%;
+    height: 100%;
+    float: right; 
+   
+}
+.imgwhyus img{
+    width: 65%;
+    padding-top: 150px;
+    
+}
+.bnwhyus{
+   width: 10px;
+   height: 10px;
+   display: inline-block;
+   background-color: #a8a8a8;
+   margin: 10px 5px;
+   border-radius: 50%;
+   
+}
+.imgwhyus ul{
+    padding-left: 30%;
+}
+.bnwhyusactv{
+   background-color: rgb(126, 126, 247);
+}
+.bnwhyus:hover{
+    background-color: rgb(126, 126, 247);
+}
+/* ///////////////////////////////////////////////////////////// */
+.sectionnambrs{
+    background-image: url(../img/eee.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.ovrnambrs{
+    background-color: rgba(0, 0, 0,0.6);
+}
+.contrnambars{
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    overflow: auto;
+}
+.nambrs{
+    padding-top: 125px;
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.nambrs i{
+    color: #4a6ee4;
+    font-size: 40px;
+}
+.nambrs h2{
+    color: rgb(250, 250, 250);
+    font-size: 35px;
+    line-height: 55px;
+}
+.nambrs p{
+    color: rgb(250, 250, 250);
+    word-spacing: 2px;
+    font-size: 20px;
+}
+/* //////////////////////////////////////////////////////////////// */
+.sectionprictab{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(240, 248, 248);
+}
+.hedrprictab{
+    width: 100%;
+    height: 30%;
+    position:relative;
+  
+}
+.tshprictab{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.tshprictab h2{
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    font-family: 'varela round' , sans-serif;
+}
+.tshprictab p{
+    width: 100px;
+    height: 4px;
+    background-color: rgb(116, 116, 245);
+    text-align: center;
+    margin: auto;
+}
+.contrprictab{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    position: relative;
+}
+.parntprictab123{
+    width: 30%;
+    height: 52%;
+    float: left;
+    border: 1px solid rgb(172, 171, 171);
+    text-align: center;
+    position: relative;
+   
+    
+}
+.sdprictab123{
+    margin: 0 5%;
+}
+.parntprictab123 h2{
+    font-size: 25px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color:rgb(172, 172, 172);
+    letter-spacing: 1.5;
+    word-spacing: 2px;
+   
+}
+
+.srclprictab{
+    width: 110px;
+    height: 110px;
+    border: 2px solid rgb(86, 128, 207);
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    
+}
+.infoprictab{
+   
+}
+.srclprictab h3{
+    font-size: 60px;
+}
+.srclprictab p{
+    text-transform: uppercase;
+}
+.parntprictab123 ul{
+    list-style: none;
+    line-height: 35px;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    color:rgb(172, 172, 172);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.parntprictab123 button{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    border-color: rgb(81, 81, 248);
+    border-radius: 3px;
+}
+.parntprictab123::before{
+   
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(12, 12, 12,0.5);
+    transition: 0.7s;
+}
+.parntprictab123:hover::before{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8,0.5);
+    
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.sectionfootbool{
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/pngtree-aerial-aerial-view-of-football-field-picture-image_1683396.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.ovrfootbool{
+    height: 100%;
+    background-color: rgba( 0 , 0, 0 ,0.6);
+}
+.imgfootbool img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.contrfootbool{
+    width: 75%;
+    margin: auto;
+   
+}
+.parentfootbool{
+    overflow: auto;
+}
+.sd12footbool45{
+    height: 25vh;
+    
+    float: left;
+    width: 47.5%;
+    overflow: auto;
+    position: relative;
+}
+.bnfootbool{
+    margin-left: 5%;
+}
+.mninfrfootbool{
+    position: absolute;
+    left: 150px;
+    top: 25;
+}
+.mninfrfootbool h2{
+    font-size: 25px;
+    color: rgb(250, 250, 250);
+}
+.mninfrfootbool span{
+    font-size: 21px;
+    color: rgb(89, 89, 221);
+}
+.imgfootbool{
+    float: left;
+}
+.sd12footbool45 p{
+    font-size: 18px;
+    position: absolute;
+    bottom: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1.1px;
+    color: rgb(250, 250, 250);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+.contr{
+    width: 80%;
+    margin: auto;
+    
+}
+.ourteam{
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+}
+.qq{
+    margin: 0% 5%;
+}
+.team{
+    float: left;
+    width: 30%;
+    height: 50%;
+    padding: 14PX 25PX;
+    text-align: center;
+    position: relative;
+    background-color: rgb(221, 220, 220);
+}
+.imgut{
+ position: relative;
+ background-color: rgb(0, 0, 0,);
+ text-align: center;
+ height: 80%;
+}
+.imgut img{
+    width:100%;
+    height: 100%;
+}
+.ovrlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    text-align: right;
+    /* visibility: hidden; */
+    transition: 1 s;
+    /* opacity: 0; */
+}
+.ovrlay a  {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(127, 127, 252);
+    font-size:25px ;
+    text-align: center;
+    margin-left: auto;
+
+}
+.ovrlay a i{
+    line-height: 40px;
+}
+.team:hover .ovrlay{
+    visibility: visible;
+    opacity: 0.7;
+}
+.team::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(12, 12, 12,0.5);
+    transition: 1s;
+}
+.team:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8,0.5);
+   
+}
+.team h2{
+    font-size: 25px;
+    letter-spacing: 1.3px;
+    line-height: 45px;
+}
+.team span{
+    text-transform: uppercase;
+    color: rgb(151, 149, 149);
+    letter-spacing: 1.3px;
+    line-height: 30px;
+}
+.team:hover h2{
+    color: rgb(250, 250, 250);
+}
+.team:hover span{
+    color: #7510d3;
+}
